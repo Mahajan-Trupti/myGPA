@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">GPA CALCULATOR</h1>
+        <hr class="divider">
+        <div class="group-toggle">
+            <button id="group1-btn" class="toggle-btn active">GROUP 1</button>
+            <button id="group2-btn" class="toggle-btn">GROUP 2</button>
+        </div>
+        <div class="table-container">
+            <table id="courses-table">
+                <thead>
+                    <tr>
+                        <th>COURSE NAME</th>
+                        <th>CREDITS</th>
+                        <th>TOTAL MARKS</th>
+                        <th>MARKS</th>
+                    </tr>
+                </thead>
+                <tbody id="courses-tbody">
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <button id="calculate-btn" class="calculate-btn">CALCULATE</button>
+        <div class="result">
+            <span>Your SGPA: </span><span id="sgpa-result">_____</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
